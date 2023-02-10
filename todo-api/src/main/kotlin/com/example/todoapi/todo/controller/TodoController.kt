@@ -47,7 +47,7 @@ class TodoController(private val todoService: TodoService) {
     @PutMapping
     @Transactional
     @ResponseStatus(HttpStatus.CREATED)
-    fun add(
+    fun update(
         @RequestBody
         @Valid
         todoUpdateRequestDTO: TodoUpdateRequestDTO
